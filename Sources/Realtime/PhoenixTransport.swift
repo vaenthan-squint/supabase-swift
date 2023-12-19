@@ -132,7 +132,7 @@ public enum PhoenixTransportReadyState {
 /// SwiftPhoenixClient supports earlier OS versions using one of the submodule
 /// `Transport` implementations. Or you can create your own implementation using
 /// your own WebSocket library or implementation.
-@available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, *)
+@available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, visionOS 1, *)
 open class URLSessionTransport: NSObject, PhoenixTransport, URLSessionWebSocketDelegate {
   /// The URL to connect to
   let url: URL

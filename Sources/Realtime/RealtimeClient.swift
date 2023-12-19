@@ -177,7 +177,7 @@ public class RealtimeClient: PhoenixTransportDelegate {
   // MARK: - Initialization
 
   // ----------------------------------------------------------------------
-  @available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, *)
+  @available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, visionOS 1, *)
   public convenience init(
     _ endPoint: String,
     headers: [String: String] = [:],
@@ -193,7 +193,7 @@ public class RealtimeClient: PhoenixTransportDelegate {
     )
   }
 
-  @available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, *)
+  @available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, visionOS 1, *)
   public convenience init(
     _ endPoint: String,
     headers: [String: String] = [:],

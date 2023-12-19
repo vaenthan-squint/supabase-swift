@@ -2,11 +2,12 @@ PLATFORM_IOS = iOS Simulator,name=iPhone 15 Pro
 PLATFORM_MACOS = macOS
 PLATFORM_MAC_CATALYST = macOS,variant=Mac Catalyst
 PLATFORM_TVOS = tvOS Simulator,name=Apple TV
+PLATFORM_VISIONOS = visionOS Simulator,name=Vision Pro
 PLATFORM_WATCHOS = watchOS Simulator,name=Apple Watch Series 9 (41mm)
 EXAMPLE = Examples
 
 test-library:
-	for platform in "$(PLATFORM_IOS)" "$(PLATFORM_MACOS)" "$(PLATFORM_MAC_CATALYST)" "$(PLATFORM_TVOS)" "$(PLATFORM_WATCHOS)"; do \
+	for platform in "$(PLATFORM_IOS)" "$(PLATFORM_MACOS)" "$(PLATFORM_MAC_CATALYST)" "$(PLATFORM_TVOS)" "$(PLATFORM_WATCHOS)" "$(PLATFORM_VISIONOS)"; do \
 		xcodebuild test \
 			-skipMacroValidation \
 			-workspace supabase-swift.xcworkspace \
